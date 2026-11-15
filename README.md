@@ -14,7 +14,7 @@
 
 ### 2. 本地运行
 
-需要 Node.js 20 或更新版本。项目根目录创建本地 `.env` 文件：
+需要 Node.js 20 或更新版本。复制 `.env.example` 为 `.env.local`，并在 `.env.local` 中填写密钥：
 
 ```env
 GEMINI_API_KEY=粘贴你自己的密钥
@@ -23,8 +23,9 @@ GEMINI_API_KEY=粘贴你自己的密钥
 安装 Vercel CLI 并启动：
 
 ```bash
+npm install
 npm install -g vercel
-vercel dev
+npm run dev
 ```
 
 打开 Vercel CLI 输出的本地地址，并访问 `/001.html`。
